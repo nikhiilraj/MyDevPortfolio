@@ -1,0 +1,33 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import PillNav from "../React/PillNav.tsx";
+import Home from "@/components/home.astro";
+import Projects from "@/components/projects.astro";
+import Contact from "@/components/contact.astro";
+import Footer from "@/components/footer.astro";
+
+const navItems = [
+  { label: "Home", href: "#home" },
+  { label: "Projects", href: "#projects" },
+  { label: "Contact", href: "#contact" }
+];
+---
+
+<Layout title="Nikhil Raj">
+  <PillNav 
+    client:load
+    logo="/logo.svg"
+    logoAlt="Nikhil Raj"
+    items={navItems}
+    activeHref="#home"
+    baseColor="#1a1a1a"
+    pillColor="#ffffff"
+    hoveredPillTextColor="#ff006e"
+    pillTextColor="#1a1a1a"
+    ease="power2.easeOut"
+  />
+  <Home />
+  <Projects />
+  <Contact />
+  <Footer />
+</Layout>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 120" width="200" height="120" role="img" aria-label="Nikhil Raj Logo - Futuristic Minimal">
+  <defs>
+    <linearGradient id="gradFront3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <linearGradient id="gradBack3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f1724"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <style>
+      .front { fill: url(#gradFront3); }
+      .back { fill: url(#gradBack3); }
+    </style>
+  </defs>
+
+  <path class="back" d="M30 90 L30 30 L60 30 L120 90 L90 90 L60 60 L60 90 Z"/>
+  <path class="front" d="M60 30 L120 90 L140 90 L80 30 Z"/>
+</svg>
